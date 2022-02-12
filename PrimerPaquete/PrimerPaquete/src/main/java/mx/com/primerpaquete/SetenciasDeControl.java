@@ -9,5 +9,8 @@ package mx.com.primerpaquete;
  * @author bernardo
  */
 public class SetenciasDeControl {
+    //inicio 51 min
+    
+    
     
 }
