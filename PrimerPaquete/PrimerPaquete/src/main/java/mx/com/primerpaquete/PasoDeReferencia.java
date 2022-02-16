@@ -8,13 +8,14 @@ package mx.com.primerpaquete;
  *
  * @author bernardo
  */
-public class ContructoresEnJava {
-    //section 12 /32 min
-    //contructor vacio se refleja en la clase de Aritmetica.java
-   // todo lo de esta leccion se vera reflejado en creacion de metodos y aritmetica
+public class PasoDeReferencia {
+    String nombre;
+    public String ObtenerNombre(){
+        return this.nombre;
+        
+    }
+    public void cambiarNombre(String nuevoNombre){
+        this.nombre = nuevoNombre;
+    }
     
-        
-       
-        
-        
 }

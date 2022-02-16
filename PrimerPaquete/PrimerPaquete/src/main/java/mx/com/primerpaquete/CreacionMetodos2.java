@@ -11,11 +11,16 @@ package mx.com.primerpaquete;
 public class CreacionMetodos2 {
 
     public static void main(String[] args) {
-      
+
         Aritmetica aritmetica = new Aritmetica();
-        
-        int resultado = aritmetica.sumar(5, 3);
+        aritmetica.a = 10;
+        aritmetica.b = 3;
+        int resultado = aritmetica.sumar();
         System.out.println("resultado = " + resultado);
+
+        //creacion de un segundo objeto Aritmetica
+        Aritmetica aritmetica2 = new Aritmetica(4, 2);
+        System.out.println("resultado2: " + aritmetica2.sumar());
         
         
     }
