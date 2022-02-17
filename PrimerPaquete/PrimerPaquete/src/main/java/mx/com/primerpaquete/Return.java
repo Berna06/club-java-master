@@ -26,7 +26,7 @@ public class Return {
 
     private static int sunarRetonandoValor(int a, int b) {
         return a + b;
-       
+
     }
 
 }
