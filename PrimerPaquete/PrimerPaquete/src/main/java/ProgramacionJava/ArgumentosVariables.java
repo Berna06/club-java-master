@@ -8,6 +8,7 @@ package ProgramacionJava;
  *
  * @author bernardo
  */
-public class Clase1 {
+public class ArgumentosVariables {
+    
     
 }
