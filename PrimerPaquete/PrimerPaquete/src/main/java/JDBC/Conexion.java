@@ -35,5 +35,13 @@ public class Conexion {
             ex.printStackTrace(System.out);
         }
     }
+
+    PreparedStatement preparedStatement() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    PreparedStatement preparedStatement(String SQL_INSERT) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
