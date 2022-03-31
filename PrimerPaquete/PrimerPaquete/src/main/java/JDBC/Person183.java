@@ -16,10 +16,21 @@ import java.util.List;
  * @author bernardo
  */
 public class Person183 {
-        private static final String SQL_SELECT = "SELECT id_persona, nombre, apellido, email, telefono FROM persona";
+
+    private static final String SQL_SELECT = "SELECT id_persona, nombre, apellido, email, telefono FROM persona";
     private static final String SQL_INSERT = "INSERT INTO persona(nombre, apellido, email, telefono) VALUES(?,?, ?, ?)";
     private static final String SQL_UPDATE = "UPDATE persona SET nombre=?, apellido=?, email=?, telefono=? WHERE id_persona = ?";
     private static final String SQL_DELETE = "DELETE FROM perosna WHERE id_persona=?";
+    private Connection conexionTransacional;
+
+    public Person183() {
+        
+
+    }
+    
+    public Person183(Connection conexionTransacional){
+        this.conexionTransacional = conexionTransacional;
+    }
 
     public List<Persona178> select() {
         Connection conn = null;
@@ -28,7 +39,7 @@ public class Person183 {
         Persona178 persona = null;
         List<Persona178> personas = new ArrayList<Persona178>();
         try {
-            conn = Conexion.getConnection();
+            conn = this.conexionTransacional != null ? this.conexionTransacional : Conexion.getConnection();
             stmt = conn.prepareStatement(SQL_INSERT);
             rs = stmt.executeQuery();
             while (rs.next()) {
@@ -52,7 +63,9 @@ public class Person183 {
         } finally {
             Conexion.close(rs);
             Conexion.close(stmt);
+            if(this.conexionTransacional == null){
             Conexion.close(conn);
+            }
         }
         return personas;
 

@@ -4,7 +4,11 @@
  */
 package JDBC;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -26,5 +30,16 @@ public class ManejoPersonas {
         persona.setTelefono("55 6666 1818");
         
         //Persona178.insert(persona);
+        
+        Person183 personajdbc = new Person183();
+        try {
+            Connection conexion = Conexion.getConnection();
+          /*  if(conexion.autoCommit()){
+                conexion.setAutoCommit(false);
+            }*/
+        } catch (SQLException ex) {
+            ex.printStackTrace(System.out);
+        }
+        
     }
 }
