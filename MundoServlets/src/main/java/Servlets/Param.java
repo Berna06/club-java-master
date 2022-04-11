@@ -1,4 +1,4 @@
-package Servlets;
+/*package Servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -29,8 +29,8 @@ public class Param extends HttpServlet{
             out.print("el parametro password es:" + password);
             out.print("</body>");
             out.print("</html>");
-            
+            out.close();
             
             
     }
-}
+}*/
