@@ -18,6 +18,20 @@
         <li>${"hOLAMUNDO con exprecion de lenguaje"} </li>
         <li> <%= "Hola mundo con expresiones" %> </li>
         <li> <c:out value="hola mundo desde los jps" /> </li>
-    </u1>
+    </u1>\
+    
+    
+    <h1>Ejemplo expresiones JPS</h1>
+    <br>
+    <a href="expresiones.jps">Link al JPS de expresiones</a>
+    </br>
+    <h4>Formulario HTML</h4>
+    <form name="formulario" action="formulario.jsp">
+        Usuario: <input type="text" name="usuario">
+        <br>
+        Password: <input type="password" name="password">
+        <br>
+        <input type="submit" value="enviar">
+     </form>
     </body>
 </html>
