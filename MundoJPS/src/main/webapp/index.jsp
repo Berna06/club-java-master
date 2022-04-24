@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mundo JPS'S</title>
+        <title>Mundo JSP'S</title>
     </head>
     <body>
         <h1>Introduccion al mundo JPS</h1>
@@ -77,5 +77,22 @@
     <h1>Generacion de reporte excel directivas</h1>
     <br/>
     <a href="Reporte.jsp">Link al reprote de excel</a>
+    
+    
+    <h1>Inclusion estatica</h1> 
+    <br/>
+    <u1>
+        <li> <%@include file="paginas/noticias.html" %></li>
+        <li> <%@include file="paginas/notis.jsp" %></li>
+    </u1>
+    
+    
+    <h1>Inclusion dinamica</h1>
+    <br/>
+    <jsp:include page="paginas/recursos.jsp" />
+    <br/><!-- comment -->
+    <jsp:include page="WEB-INF/privado.jsp" >
+        <jsp:param name="colorFondo" value="grey"/>
+    </jsp:include>
 </body>
 </html>
