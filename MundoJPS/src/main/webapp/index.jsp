@@ -69,24 +69,24 @@
     Valor de Visitas por el atributo: <%= this.contadorVisitas++%>
     <br>
 
-    
+
     <h1>Documentacion</h1>
     <a href="documentacion.jspx">Link Para el ejemplo de documentacion</a>
-    
-    
+
+
     <h1>Generacion de reporte excel directivas</h1>
     <br/>
     <a href="Reporte.jsp">Link al reprote de excel</a>
-    
-    
+
+
     <h1>Inclusion estatica</h1> 
     <br/>
     <u1>
         <li> <%@include file="paginas/noticias.html" %></li>
         <li> <%@include file="paginas/notis.jsp" %></li>
     </u1>
-    
-    
+
+
     <h1>Inclusion dinamica</h1>
     <br/>
     <jsp:include page="paginas/recursos.jsp" />
@@ -94,5 +94,21 @@
     <jsp:include page="WEB-INF/privado.jsp" >
         <jsp:param name="colorFondo" value="grey"/>
     </jsp:include>
+
+    
+    <h1>Uso de JavaBeans</h1>
+    <a href="setl.jsp">Modificar valores de Java Benas</a>
+    <br/>
+    <a href="get.jsp">Leer valores del rectangulo</a>
+    <br/>
+    <br/>
+    
+    
+    <h1>Manejo de EL Expression Language</h1>
+    <br/>
+    <a href="Variables.jsp?usuario=juan">Objetos implicitos con EL</a>
+    
+    
+    <h1></h1>
 </body>
 </html>
