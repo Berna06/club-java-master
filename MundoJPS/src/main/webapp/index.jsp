@@ -109,6 +109,9 @@
     <a href="Variables.jsp?usuario=juan">Objetos implicitos con EL</a>
     
     
-    <h1></h1>
+    <h1>Manejo de JSTL en jSP</h1>
+    <br/>
+    <br/>
+    <a href="JSTLCore.jsp?opcion=1">Link al ejemplo de JSTL en JSP</a>
 </body>
 </html>
