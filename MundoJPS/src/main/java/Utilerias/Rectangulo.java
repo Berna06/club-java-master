@@ -3,6 +3,10 @@ package Utilerias;
 public class Rectangulo {
     private int base;
     private int altura;
+
+    public Rectangulo(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     public int getAltura(){
         return this.altura;

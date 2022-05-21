@@ -113,5 +113,13 @@
     <br/>
     <br/>
     <a href="JSTLCore.jsp?opcion=1">Link al ejemplo de JSTL en JSP</a>
+    <br/>
+    <br/>`
+    <<h1>MVC's con java</h1>
+    <br/>
+    <br/>
+    <a href="${pageContext.request.contextPath}/ServletControlador">
+    Link al Servlet controladorque despliega las variables
+    </a>
 </body>
 </html>
