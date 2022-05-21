@@ -45,5 +45,5 @@ public class Persona178 {
     public void setTelefono(String Telefono) {
         this.Telefono = Telefono;
     }
-            
+           
 }

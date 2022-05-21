@@ -2,7 +2,9 @@
 package controlador;
 
 import Utilerias.Rectangulo;
+import java.io.IOException;
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 /**
@@ -12,7 +14,7 @@ import javax.servlet.http.*;
 @WebServlet("/ServletControlador")
 public class ServletControlador extends HttpServlet{
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response){
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         //1. Procesamos los parametros
         
         //2. Creamos los javabeans
@@ -26,6 +28,7 @@ public class ServletControlador extends HttpServlet{
         
         //4. redireccionamos a la vista seleccionada
         RequestDispatcher rd = request.getRequestDispatcher("vista/desplegarVariables.jsp");
+        rd.forward(request, response);
         
     }
 }
