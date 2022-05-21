@@ -6,6 +6,4 @@ nbconstruir /
 dist /
 nbdist /
 .nb-gradle /
-/PrimerPaquete/PrimerPaquete/target/
-/MundoServlets/target/
-/MundoJPS/target/
+/MundoServlets/MundoServlets/target/
